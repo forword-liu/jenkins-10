@@ -1,0 +1,79 @@
+{% extends 'web_app/base.html' %}
+{% block body_block %}
+  <div class="container">
+    <div class="jumbotron">
+      <!-- <h1>Summary & Projects</h1> -->
+<!--
+        <form method="post" action="{% url 'web_app:user_login' %}">
+          {% csrf_token %}
+          {# A more "HTML" way of creating the login form#}
+          <label for="username">Username: </label>
+          <input type="text" name="username" placeholder="Username"><br><br>
+
+          <label for="password">Password: </label>
+          <input type="password" name="password">
+
+          <input type="submit" name="" value="Login">
+
+        </form> -->
+
+<h3>SUMMARY</h3>
+  <ul class="textcontent">
+    <li>Skilled in AWS EC2, S3, RDS, Elastic IPs, EBS, Security Group, Access Control List, Route 53, VPC, ELB/ALB, Elastic Beanstalk, DynamoDB, and CloudFormation in AWS cloud infrastructure.</li>
+    <li>Networking – setting up VPC, subnets, VPC peering, VPN connection, and configure AWS IAM, MFA, Security Groups, Network Access Control List (NCAL) in Public and Private Subnets in VPC. Experience working with IAM in to create new accounts, roles, groups, and assign individual policies to each group.
+</li>
+    <li>Designing, deploying, managing and operating scalable, highly available and fault-tolerant systems on AWS.
+</li>
+    <li>Experience in monitoring metrics on EC2, EBS, Elastic Load Balancer, RDS using CloudWatch with basic metrics and custom metrics such as memory usage, Swap usage, etc.
+</li>
+    <li>Deploying multiple applications utilizing most of the AWS stack (including EC2, Rout 53, S3, RDS, DynamoDB, SNS, SQS, IAM) focusing on high-availability, fault tolerance, elastic load balancing and auto scaling.
+</li>
+    <li>Experience in building CICD pipeline with DevOps tools such as version control system (Git), containerization (Docker), automated build, integration & deployment (Jenkins), AWS Code Pipeline, and elastic Beanstalk.
+</li>
+    <li>Experience in Cloud infrastructure automation using Puppet, Ansible and AWS CloudFormation templates.</li>
+    <li>Hands-on skills of software containerization platforms like Docker and container orchestration tools like Kubernetes and Docker Swarm.</li>
+    <li>Install & configure Nagios to constantly monitor network bandwidth, memory usage, & hard drive status.</li>
+    <li>Build, test, and deploy Docker applications with Kubernetes, Jenkins, Travis CI to AWS.</li>
+    <li>Build web applications with HTML, CSS, JQerry, JAVA, Python and Django.</li>
+    <li>Migrate VirtualBox VM (linux and windows) and on-premise applications to AWS cloud.</li>
+    <li>Estimating AWS usage costs and identifying operational cost control mechanisms.</li>
+    <li>Oracle WebLogic/Fusion Middleware, UNIX, Linux, Apache installation, configuration.</li>
+    <li>Hands-on experience in linux (RedHat/Centos/Oracle/Ubuntu)</li>
+    <li>Working knowledge of Python, Bash scripting.</li>
+    <li></li>
+
+  </ul>
+  <h3>EDUCATION</h3>
+    <ul class="textcontent">
+    <li>Ph.D. in Chemistry, Peking University 							     Jun. 1998</li>
+    </ul>
+    <div class="">
+
+  <h3>PROFESSIONAL EXPERIENCE</h3>
+      <ul class="textcontent">
+        <h4>Projects on AWS Cloud (hands-on with AWS personal account) 					10/01/2018 – Current</h4>
+        <li>Build Three-Tier High Availability and Fault Tolerance VPC Architect on AWS – Create 3-tier VPC with public and private subnets. Secure VPC resources with security groups (ELB, NAT, Bastion, AppServer and database security groups). Monitoring VPC with VPC flow logs (create IAM role for VPC flow logs, CloudWatch Log Group, VPC Flow Log). Building High Availability with Multiple Availability Zones. Create an Application ELB and Auto Scaling group (create ALB, Auto Scaling launch configuration, Auto Scaling Group, set up scaling policy). Deploying Multi AZ Aurora Serverless Cluster (create DB subnet group, deploy Aurora serverless database). Accessing VPC resources with Cloud9 Bastion Host (create Cloud9 environment, add security group). Increasing security with public & private Network Access Control Lists (NACLs).
+        <li>Build CI/CD pipeline configurations from Jenkins – source code version control with Git, containerization with Docker, continuous testing with Selenium, build jobs with shell scripting, build triggers, environments, and after job action settings for continuous integration and deployment using Jenkins to AWS cloud.</li>
+        <li>Build personal website with some applications (ongoing)</li>
+        <li>Automated Configuring two server groups for Apache2 and Nginx using Puppet and Ansible to AWS – using Puppet to configure two servers and update website html files; also using Ansible to configure same.
+</li>
+        <li>Provision infrastructure with CloudFormation on AWS – create a VPC; deploying the architecture with CloudFormation; create an Internet Gateway and a Route to Subnet; updating the architecture with CloudFormation; Create an EC2 instance and security group; Deploying the Wordpress Server.
+</li>
+        <li>Migrate on premise VM to AWS – VM Import/Export/Create EC2 instances based on on-premise server – Extract vmdk file from on-premise VMware or VirtualBox. Create S3 bucket and upload vmdk file with AWS console/AWS CLI. Create trust-policy.json file, vmimport role, role-policy.json file, and attach role-policy.json to vmimport role. create containers.json file, create AMI from uploaded vmdk file. create EC2 instance from newly created AMI.
+</li>
+
+      </ul>
+      <h4>IT Technical Support, 01/2018 – Current,  Family Business</h4>
+      <ul>
+        <li>IT support, software installation, configuration, updating, software application training and maintenance. </li>
+      </ul>
+    </div>
+
+      <h4>Dow Chemical Company, Collegeville, PA 						       06/2003 – 12/2017, Senior Scientist</h4>
+      <ul>
+        <li>(26 patent applications/15 granted patents) Developed new materials and formulations for electronic applications. Collaborated with internal downstream business to develop applications. Networked with other scientists to generate shelf-life, physical property, toxicology, and other regulatory information for new chemical substances. Mentored technologists and junior scientists in synthesis, purification, and characterization of new materials. Led and managed projects and experiments for R&D portfolio goals; organize project plans in alignment with business objectives and timelines; coordinated the scale up and commercialization, and consistently searched for scientific and patent literature. </li>
+      </ul>
+
+    </div>
+  </div>
+{% endblock %}

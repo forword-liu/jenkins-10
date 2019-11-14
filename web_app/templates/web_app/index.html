@@ -1,0 +1,50 @@
+{% extends "web_app/base.html" %}
+{% block body_block %}
+
+<div class="container">
+  <div class="jumbotron">
+
+    {% if user.is_authenticated %}
+
+        <h2>Welcome {{ user.username.upper }} to Xiangqian Liu's Website</h2>
+    {% else %}
+
+    {% endif %}
+
+    <h1>AWS Admin/SysOps/DevOps</h1>
+    <h2>Certificates</h2>
+    <p><a href="https://forword.s3.amazonaws.com/AWS+Certified+SysOps+Administrator+-+Associate+certificate+(1).pdf">AWS Certified SysOps Administrator - Associate (Validation Number 7XP4S4Q232F1QS90)</a></p>
+    <p><a href="https://forword.s3.amazonaws.com/AWS+Certified+Solutions+Architect+-+Associate+certificate+(1).pdf">AWS Certified Solution Architect - Associate (Validation Number JVTSBHCKG144QNKH)</a></p>
+    <p><a href="https://forword.s3.amazonaws.com/Python+Django+Full+Stac+Web+Developer+Bootcamp-11092019.jpg">Python and Django Full Stack Web Developer Bootcam, Certificate of Course Completion (32 hrs)</a></p>
+
+    <p>Skilled and passionate AWS cloud engineer with lots of hands-on experience in implementing, supporting, automating, and optimizing the deployments in AWS, leveraging configuration management, Continuous integration/continuous deployment (CICD), and SysOps/DevOps processes.</p>
+    <h3>KEY SKILLS</h3>
+    <ul class="skills">
+      <li>AWS services – EC2, S3, RDS, Route 53, SQS, SNS, CloudWatch, CloudTrail, Autoscaling, ALB, etc.</li>
+      <li>AWS security/networking configuration – IAM, Security group, NACL, VPC, WAF, VPN, etc.</li>
+      <li>AWS monitoring/logs – CloudWatch, CloudTrail, VPC Flow Log, Access Logs (S3, CloudFront, RDS).</li>
+      <li>Developing CICD pipeline with opensource DevOps tools for automated continuous development, testing, deployment and monitoring – Git, Puppet, Ansible, Docker, Selenium, Jenkins, Kubernetes and Nagios.</li>
+      <li>Configuration/patching/updating automation – Puppet, Ansible, CloudFormation, AWS SSM.</li>
+      <li>Build web applications with HTML, CSS, Bootstrap, Python and Django</li>
+      <li>Good understanding of Linux (RedHat, Centos, Oracle, Ubuntu), Python, shell scripting.</li>
+    </ul>
+
+    <h3>PROFESSIONAL TRAINING AND CERTIFICATES</h3>
+    <ul class="skills">
+      <li>AWS Certified SysOps Administrator – Associate (Validation Number 7XP4S4Q232F1QS90) 	Aug. 2019 </li>
+      <li>AWS Certified Solution Architect – Associate (Validation Number JVTSBHCKG144QNKH) 	Jul. 2019  </li>
+      <li>DevOps Certification Training Course Online (Intellipaat/42 hrs training/60 hrs hands-on project)  Sep. 2019</li>
+      <li>Python and Django Full Stack Web Developer Bootcamp (<a href="https://forword.s3.amazonaws.com/Python+Django+Full+Stac+Web+Developer+Bootcamp-11092019.jpg">32 hrs, Certification of completion</a>) Nov. 2019</li>
+      <li>AWS Certified DevOps Engineer Professional 2020 - Hands On (Udemy, 20.5 hrs) Oct. 2019</li>
+      <li>Complete Linux Training Course (Udemy, 22.5 hrs) Jul. 2019</li>
+      <li>Linux administration training & Python programming training (from Intellipaat/Udemy)	Jul.   2019</li>
+
+    </ul>
+
+    <p></p>
+    <p></p>
+
+  </div>
+</div>
+
+{% endblock %}
